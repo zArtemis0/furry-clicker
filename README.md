@@ -1,4 +1,4 @@
-# cookieclicker
+# furryclicker
 
 <img src="img/perfectCookie.png" width="128">
 
