@@ -1886,7 +1886,7 @@ Game.Launch=function()
 	'</div><div class="subsection update small">'+
 	'<div class="title">25/08/2013 - tweaks</div>'+
 	'<div class="listing">&bull; rebalanced progression curve (mid- and end-game objects cost more and give more)</div>'+
-	'<div class="listing">&bull; added some more cookie upgrades</div>'+
+	'<div class="listing">&bull; added some more furry upgrades</div>'+
 	'<div class="listing">&bull; added CpS for cursors</div>'+
 	'<div class="listing">&bull; added sell button</div>'+
 	'<div class="listing">&bull; made golden cookie more useful</div>'+
@@ -2488,7 +2488,7 @@ Game.Launch=function()
 		
 		Game.externalDataLoaded=false;
 		
-		Game.grandmaNames=['Granny','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous'];
+		Game.grandmaNames=['Furry','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous'];
 		Game.customGrandmaNames=[];
 		Game.heralds=0;
 		
@@ -5602,7 +5602,7 @@ Game.Launch=function()
 					{
 						var str=EN?(choose([
 						'Cookie crumbliness x3 for 60 seconds!',
-						'Chocolatiness x7 for 77 seconds!',
+						'Furryness x7 for 77 seconds!',
 						'Dough elasticity halved for 66 seconds!',
 						'Golden cookie shininess doubled for 3 seconds!',
 						'World economy halved for 30 seconds!',
@@ -7028,41 +7028,41 @@ Game.Launch=function()
 					else
 					{
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
-						'News : cookie farms suspected of employing undeclared elderly workforce!',
-						'News : cookie farms release harmful chocolate in our rivers, says scientist!',
-						'News : genetically-modified chocolate controversy strikes cookie farmers!',
-						'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
-						'News : farm cookies deemed unfit for vegans, says nutritionist.'
+						'News : furry farms suspected of employing undeclared elderly workforce!',
+						'News : furry farms release harmful chocolate in our rivers, says scientist!',
+						'News : genetically-modified fur controversy strikes furry farmers!',
+						'News : free-range farm furries popular with today\'s hip youth, says specialist.',
+						'News : farm furs deemed unfit for vegans, says nutritionist.'
 						]));
 						
 						if (Game.Objects['Mine'].amount>0) list.push(choose([
-						'News : is our planet getting lighter? Experts examine the effects of intensive chocolate mining.',
-						'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed chocolate mine!',
-						'News : chocolate mines found to cause earthquakes and sinkholes!',
-						'News : chocolate mine goes awry, floods village in chocolate!',
-						'News : depths of chocolate mines found to house "peculiar, chocolaty beings"!'
+						'News : is our planet getting lighter? Experts examine the effects of intensive fur mining.',
+						'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed fur mine!',
+						'News : fur mines found to cause earthquakes and sinkholes!',
+						'News : fur mine goes awry, covers village in fur!',
+						'News : depths of fur mines found to house "peculiar, furry beings"!'
 						]));
 						
 						if (Game.Objects['Factory'].amount>0) list.push(choose([
-						'News : cookie factories linked to global warming!',
-						'News : cookie factories involved in chocolate weather controversy!',
-						'News : cookie factories on strike, robotic minions employed to replace workforce!',
-						'News : cookie factories on strike - workers demand to stop being paid in cookies!',
-						'News : factory-made cookies linked to obesity, says study.'
+						'News : furry factories linked to global warming!',
+						'News : furry factories involved in fur weather controversy!',
+						'News : furry factories on strike, protogens employed to replace workforce!',
+						'News : furry factories on strike - workers demand to stop being paid in furries!',
+						'News : factory-made furries linked to cuteness, says study.'
 						]));
 						
 						if (Game.Objects['Bank'].amount>0) list.push(choose([
-						'News : cookie loans on the rise as people can no longer afford them with regular money.',
-						'News : cookies slowly creeping up their way as a competitor to traditional currency!',
-						'News : most bakeries now fitted with ATMs to allow for easy cookie withdrawals and deposits.',
-						'News : cookie economy now strong enough to allow for massive vaults doubling as swimming pools!',
-						'News : "Tomorrow\'s wealthiest people will be calculated by their worth in cookies", predict economists.'
+						'News : fur loans on the rise as people can no longer afford them with regular money.',
+						'News : furries slowly creeping up their way as a competitor to traditional currency!',
+						'News : most fur-factories now fitted with ATMs to allow for easy furry withdrawals and deposits.',
+						'News : furry economy now strong enough to allow for massive vaults doubling as swimming pools!',
+						'News : "Tomorrow\'s wealthiest furries will be calculated by their worth in fur", predict economists.'
 						]));
 						
 						if (Game.Objects['Temple'].amount>0) list.push(choose([
-						'News : explorers bring back ancient artifact from abandoned temple; archeologists marvel at the centuries-old '+choose(['magic','carved','engraved','sculpted','royal','imperial','mummified','ritual','golden','silver','stone','cursed','plastic','bone','blood','holy','sacred','sacrificial','electronic','singing','tapdancing'])+' '+choose(['spoon','fork','pizza','washing machine','calculator','hat','piano','napkin','skeleton','gown','dagger','sword','shield','skull','emerald','bathtub','mask','rollerskates','litterbox','bait box','cube','sphere','fungus'])+'!',
-						'News : recently-discovered chocolate temples now sparking new cookie-related cult; thousands pray to Baker in the sky!',
-						'News : just how extensive is the cookie pantheon? Theologians speculate about possible '+choose(['god','goddess'])+' of '+choose([choose(animals),choose(['kazoos','web design','web browsers','kittens','atheism','handbrakes','hats','aglets','elevator music','idle games','the letter "P"','memes','hamburgers','bad puns','kerning','stand-up comedy','failed burglary attempts','clickbait','one weird tricks'])])+'.',
+						'News : furry explorers bring back ancient artifact from abandoned temple; scientist furries marvel at the centuries-old '+choose(['magic','carved','engraved','sculpted','royal','imperial','mummified','ritual','golden','silver','stone','cursed','plastic','bone','blood','holy','sacred','sacrificial','electronic','singing','tapdancing'])+' '+choose(['spoon','fork','pizza','washing machine','calculator','hat','piano','napkin','skeleton','gown','dagger','sword','shield','skull','emerald','bathtub','mask','rollerskates','litterbox','bait box','cube','sphere','fungus'])+'!',
+						'News : recently-discovered fur temples now sparking new furry-related cult; thousands pray to Baker in the sky!',
+						'News : just how extensive is the furry pantheon? Theologians speculate about possible '+choose(['god','goddess'])+' of '+choose([choose(animals),choose(['kazoos','web design','web browsers','kittens','atheism','handbrakes','hats','aglets','elevator music','idle games','the letter "P"','memes','hamburgers','bad puns','kerning','stand-up comedy','failed burglary attempts','clickbait','one weird tricks'])])+'.',
 						'News : theists of the world discover new cookie religion - "Oh boy, guess we were wrong all along!"',
 						'News : cookie heaven allegedly "sports elevator instead of stairway"; cookie hell "paved with flagstone, as good intentions make for poor building material".'
 						]));
@@ -7164,10 +7164,10 @@ Game.Launch=function()
 						]));
 						
 						if (Game.Objects['You'].amount>0) list.push(choose([
-						'News : the person of the year is, this year again, '+Game.bakeryName+'! How unexpected!',
+						'News : the furry of the year is, this year again, '+Game.bakeryName+'! How unexpected!',
 						'News : criminals caught sharing pirated copies of '+Game.bakeryName+'\'s genome may be exposed to fines and up to 17 billion years prison, reminds constable.',
 						'News : could local restaurants be serving you bootleg '+Game.bakeryName+' clone meat? Our delicious investigation follows after tonight\'s news.',
-						'News : beloved cookie magnate '+Game.bakeryName+', erroneously reported as trampled to death by crazed fans, thankfully found to be escaped clone mistaken for original.',
+						'News : beloved furry magnate '+Game.bakeryName+', erroneously reported as trampled to death by crazed fans, thankfully found to be escaped clone mistaken for original.',
 						'News : "Really, we\'re just looking for some basic societal acceptance and compassion", mumbles incoherent genetic freak '+Game.bakeryName+'-Clone #59014.'
 						]));
 						
